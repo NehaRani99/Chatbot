@@ -1,0 +1,233 @@
+
+.chatbox-wrapper {
+   
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+   
+    
+}
+
+/* Chatbox header */
+/* Chatbox header */
+.chatbox-message-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: blue;
+    color: #fff;
+}
+
+.chatbox-message-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chatbox-message-class {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chatbox-message-status {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.chatbox-message-dropdown {
+    position: relative;
+}
+
+.chatbox-message-dropdown-toggle {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.chatbox-message-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    display: none;
+    list-style-type: none;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chatbox-message-dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.chatbox-message-dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.chatbox-message-dropdown-menu li a:hover {
+    color: blue;
+}
+/* Customize the scrollbar */
+/* The scrollbar itself */
+.chatbox-message-content::-webkit-scrollbar {
+    width: 0px;
+    height: 1px; /* Set the width of the scrollbar */
+}
+
+
+.chatbox-message-content {
+    padding: 10px;
+    height: 100vh;
+    overflow-y: auto; /* Add this line to enable vertical scrollbar */
+}
+.chatbox-open, .chatbox-close {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.chatbox-open:hover, .chatbox-close:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chatbox-message-dropdown {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Chatbox content */
+.chatbox-message-content {
+    padding: 10px;
+    height: 500px;
+    overflow-y: auto;
+    display: flex; /* Add this line to enable flexbox */
+    flex-direction: column; /* Add this line to stack items vertically */
+}
+
+.chatbox-message-item {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end; /* Align sent items to the right */
+}
+
+.received {
+    background-color: #f5f5f5;
+    width:50%;
+}
+
+.chatbox-message-item-text {
+    display: block;
+}
+
+.chatbox-message-item-time {
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+
+
+.chatbox-message-bottom {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f8f9fa;
+}
+
+.chatbox-message-form {
+    display: flex;
+    align-items: center;
+}
+
+.chatbox-message-input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Prevent textarea from being resized */
+}
+
+.chatbox-message-submit {
+    padding: 5px 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbox-message-submit:hover {
+    background-color: #0056b3;
+}
+/* Styling for submit button */
+button[type="submit"] {
+    padding: 6px 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Styling for submit button on hover */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for textarea */
+textarea {
+    width: 100%;
+    padding: 3px;
+    font-size: 14px;
+    border:none;
+    border-radius: 5px;
+    resize: vertical; /* Allows vertical resizing */
+}
+
+/* Styling for textarea when focused */
+textarea:focus {
+    /* border-color: blue; */
+    outline: none; /* Remove default focus outline */
+}
+.show {
+            display: block !important;
+        }
+.sent {
+    background-color: #c6cef8;
+    align-self: flex-end;
+    width:50%px; /* Align sent items to the right */
+}
+.bxs-send{
+    font-size: large;
+}
+.chatbox-toggle{
+    color: white;
+    background: blue;
+    padding: 5px;
+    font-size: 30px;
+    width:30px;
+    border-radius: 10px;
+
+}
+.chatbox-message-wrapper{
+    /* display: none; */
+}
+.dropdown{
+    display: block !important;
+}
+.chatbox-message-no-message{
+    font:1rem;
+    text-align: center;
+   
+}
